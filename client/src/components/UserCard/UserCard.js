@@ -6,7 +6,7 @@ export default function UserCard({ user }) {
   const navigate = useNavigate();
 
   function userProfile() {
-    navigate("/users");
+    navigate(`/users/${user.id}`);
   }
   return (
     <>
