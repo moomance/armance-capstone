@@ -1,0 +1,61 @@
+@use "../../styles/partials/mixins.scss" as*;
+@use "../../styles/partials/variables.scss" as *;
+@use "../..//styles/global.scss" as *;
+
+.details {
+
+    margin-top: 4.5rem;
+    padding: 0rem 3rem;
+    overflow: auto;
+    height: 76.7rem;
+
+    &__navigation{
+        display: flex;
+        justify-content: flex-start;
+
+        align-items: center;
+
+    }
+
+    &__title{
+        margin: 0;
+        margin-left: 1.6rem;
+        font-size: 3rem;
+    }
+    &__image{
+        width: 37.2rem;
+        height: 25.3rem;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 2.5rem;
+
+
+    }
+
+    &__member{
+        
+    }
+
+    &__users{
+        display: flex;
+        overflow-x: scroll;
+        white-space: nowrap;
+        height: 11rem;
+
+    }
+
+    &__description {
+        font-size: 1.4rem;
+    }
+
+    &__button {
+        @include button ($accent, $accent, $white, 37.4rem);
+        margin-top: 6rem;
+    }
+}
+
+
+.details__users::-webkit-scrollbar{
+    display: none;
+}

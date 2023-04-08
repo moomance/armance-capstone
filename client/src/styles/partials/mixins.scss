@@ -1,0 +1,81 @@
+@use "./variables.scss" as *;
+
+/* Tablet */ 
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+/* Desktop */
+
+@mixin desktop {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
+
+
+// headers 
+
+@mixin main-header ($color){
+    color: $color;
+    font-size: 3.4rem;
+    font-weight: 600;
+}
+
+@mixin h2 ($color) {
+    color: $color;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    
+}
+
+@mixin h5 ($color) {
+    color: $color;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    display: flex;
+    margin-top: 0.5rem;
+
+    align-self: center;
+    
+}
+
+@mixin h6 {
+    color: $grey;
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 100%;
+
+}
+
+@mixin p {
+    color: $grey;
+    font-size: 1.4rem;
+}
+
+@mixin labels {
+    color: $dark-grey;
+    font-size: 1.1rem;
+    margin-top: 0.4rem;
+}
+
+@mixin button ($background-color, $border-color,$font-color, $width ) {
+    background-color: $background-color;
+    border-radius: 5rem;
+    margin-bottom: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $font-color;
+    width: $width;
+    height: 7.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid $border-color;
+    text-decoration: none;
+}

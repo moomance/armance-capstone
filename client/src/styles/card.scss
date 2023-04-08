@@ -1,0 +1,78 @@
+@use "./partials/mixins.scss" as*;
+@use "./partials/typography.scss" as*;
+@use "./partials/variables.scss" as *;
+
+
+.card{
+
+    width: 11.4rem;
+    height: 11.4rem;
+    border: 1px solid $light-grey;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+
+    &:active {
+        border: 1px $accent solid;
+        color: $black;
+        font-weight: 700;
+    }
+
+
+
+    &__active {
+        border: 1px $accent solid;
+        color: $black;
+        font-weight: 700;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+
+  
+    &__profile{
+        
+        
+        height: 11.4rem;
+        border: 1px solid $light-grey;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        margin-right: 1.3rem;
+        width: 11.4rem;
+        
+
+    }
+}
+
+
+.icon {
+    
+    width: 6rem;
+    display:flex;
+    justify-content: center;
+    font-size: 5rem;
+
+    
+}
+
+.name {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.9rem;
+
+}
+

@@ -1,0 +1,77 @@
+@use "../../styles/partials/mixins.scss" as*;
+@use "../../styles/partials/variables.scss" as *;
+@use "../..//styles/global.scss" as *;
+
+.group{
+
+
+    &__card{
+
+        width: 37.2rem;
+        height: 17.5rem;
+        margin: auto;
+        border: 1px solid $light-grey;
+        border-radius: 10px;
+        background-color: red($color: #000000);
+        padding: 1.2rem;
+      
+        margin-bottom: 2rem;
+
+    }
+
+    &__details{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        border-bottom: 1px solid $light-grey;
+        padding-bottom: 1.2rem;
+
+
+    }
+
+    &__name{
+
+        display: flex;
+        align-content: center;
+       
+        
+
+    }
+    &__image{
+        width: 6rem;
+        height:6rem;
+        margin-right: 1.5rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__title {
+        color: $black;
+        font-weight: 600;
+        margin: 0;
+
+    }
+    &__members{
+        display: flex;
+        align-items: center;
+
+    }
+    &__photos{
+        margin-right: 1rem;
+       
+    }
+
+    &__number{}
+
+    &__content {
+        font-size: 1.4rem;
+
+    }
+}
+
+
+.photo {
+    width: 2.8rem;
+    height: 2.8rem;
+    
+}

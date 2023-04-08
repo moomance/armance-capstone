@@ -1,0 +1,13 @@
+@use "../../styles/partials/mixins.scss" as*;
+@use "../../styles/partials/variables.scss" as *;
+@use "../..//styles/global.scss" as *;
+
+.backarrow{
+    position: absolute;
+    left: 8%;
+
+}
+
+.bio__user {
+    font-size: 1.4rem;
+}

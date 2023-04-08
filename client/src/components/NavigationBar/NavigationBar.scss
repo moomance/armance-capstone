@@ -1,0 +1,66 @@
+@use "../../styles/partials/mixins.scss" as*;
+@use "../../styles/partials/variables.scss" as *;
+@use "../..//styles/global.scss" as *;
+
+.navigation {
+
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 39rem;
+    height:7.7rem;
+    border-top: 1px solid #FFEAE2;
+    align-items: center;
+    padding: 0rem 5rem;
+    background-color: $white;
+   
+    position: fixed;
+    bottom: 4%;
+    left: 36.6%;
+    border-radius: 40px;
+    display: none;
+    
+
+
+
+    &__item{
+
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    &__icon {
+        display: flex;
+        width: 2.4rem;
+        align-self: center;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    &__label{
+        margin-top: 0.4rem;
+        color: $dark-grey;
+        margin-top: 0.5rem;
+        &--bold{
+            font-weight: 700;
+            margin-top: 0.3rem;
+        }
+    }
+
+    &__search{
+        width: 6.4rem;
+        height: 6.4rem;
+        border-radius: 50%;
+        background-color: $accent;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 60%;
+        left: 40%;
+
+    }
+
+
+}

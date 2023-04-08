@@ -1,0 +1,33 @@
+@use "../../styles/partials/mixins.scss" as*;
+@use "../../styles/partials/variables.scss" as *;
+@use "../..//styles/global.scss" as *;
+
+.user{
+
+    &__card{
+
+        width: 8rem;
+        margin-right: 1rem;
+
+    }
+
+    &__image{
+        width: 8rem;
+        height: 8rem;
+
+    }
+
+    &__name {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 0.4rem;
+        font-size: 1.4rem;
+
+        &-container{
+
+        }
+    }
+
+
+}

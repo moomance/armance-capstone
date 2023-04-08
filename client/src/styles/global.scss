@@ -1,0 +1,94 @@
+@use "./partials/mixins.scss" as*;
+@use "./partials/typography.scss" as*;
+@use "./partials/variables.scss" as *;
+
+
+//global 
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: $avenir;
+    margin: 0;
+    background-image: url("../assets/images/iPhone\ 13\ Pro.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    width: 48rem;
+    height: 87.1rem;
+    overflow: auto;
+    padding-top: 2rem;
+    width: 43rem;
+    margin: auto;
+    position: relative;
+
+
+  }
+
+  html {
+    font-size: 62.5%;
+}
+
+
+h1 {
+    @include main-header ($black);
+}
+
+h2 {
+    @include h2 ($black);
+}
+
+h5 {
+    @include h5 ($grey);
+}
+
+h6 {
+    @include h6;
+}
+
+.button {
+    @include button ($accent, $accent, $white, 22.6rem);
+}
+
+
+// form
+
+.form {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 2rem 2.8rem;
+
+    &__button{
+        margin-bottom: 7rem;
+
+    }
+
+    &__buttons {
+        position: absolute;
+    
+        bottom:14%;
+        display: flex;
+        justify-content: space-between;
+        &--submit{
+            padding: 0rem 2.1rem;
+            width: 42rem;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            bottom:7%;
+        }
+        &--hobbies{
+
+            bottom:7%;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+

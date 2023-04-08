@@ -1,0 +1,19 @@
+@use "../../styles/partials/mixins.scss" as*;
+@use "../../styles/partials/variables.scss" as *;
+@use "../..//styles/global.scss" as *;
+
+
+.group {
+    margin-top: 6.5rem;
+    padding: 0rem 3rem;
+    overflow: auto;
+    height: 76.7rem;
+
+    &__suggestions{
+        margin-top: 3.5rem;
+    }
+
+    &-page__title {
+        margin-top: 4rem;
+    }
+}

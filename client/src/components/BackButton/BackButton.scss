@@ -1,0 +1,9 @@
+@use "../../styles/partials/mixins.scss" as*;
+@use "../../styles/partials/variables.scss" as *;
+@use "../..//styles/global.scss" as *;
+
+
+.button__back {
+    @include button($white, $white, $black, 14rem);
+
+}

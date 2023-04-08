@@ -1,0 +1,47 @@
+@use "../../styles/partials/mixins.scss" as*;
+@use "../../styles/partials/variables.scss" as *;
+@use "../..//styles/global.scss" as *;
+
+.signup {
+    display: flex;
+    padding: 1.6rem 2.8rem;
+    padding-bottom: 5rem ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__image {
+        width: 35.1rem;
+        height: 33.4rem;
+
+    }
+
+    &__hero {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__buttons {
+
+        margin-top: 2rem;
+       
+
+    }
+    &__button {
+        @include button ($accent, $accent, $white, 37.4rem );
+
+    }
+
+}
+
+.login {
+    @include button ($white, $accent, $accent, 37.4rem );
+}
