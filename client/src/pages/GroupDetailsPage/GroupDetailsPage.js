@@ -9,7 +9,7 @@ import axios from "axios";
 
 export default function GroupDetailsPage() {
   const [group, setGroup] = useState({});
-  // const [users, setUsers] = useState({});
+  const [users, setUsers] = useState([]);
   const { groupId } = useParams();
 
   useEffect(() => {
@@ -18,12 +18,12 @@ export default function GroupDetailsPage() {
       .then((res) => setGroup(res.data))
       .catch((err) => console.log(err));
 
-    // axios
-    //   .get(`http://localhost:8080/api/users`)
-    //   .then((res) => setUsers(res.data))
-    //   .catch((err) => console.log(err));
+    axios
+      .get(`http://localhost:8080/api/users`)
+      .then((res) => setUsers(res.data))
+      .catch((err) => console.log(err));
   }, []);
-
+  console.log(users);
   console.log(group.name);
   return (
     <div className="details">
@@ -35,7 +35,9 @@ export default function GroupDetailsPage() {
       <div className="details__member">
         <h2>Members | 8</h2>
         <div className="details__users">
-          <UserCard />
+          {users.map((user) => {
+            return <UserCard key={user.id} user={user} />;
+          })}
         </div>
         <div className="details__bio">
           <h2>About the group</h2>

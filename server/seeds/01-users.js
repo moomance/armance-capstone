@@ -22,7 +22,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 2,
-      name: "Sarah Johnson",
+      name: "Sarah",
       avatar: "http://localhost:8080/user2.png",
       location: "Paris",
       bio: "Bonjour!",
@@ -35,7 +35,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 3,
-      name: "Alex Kim",
+      name: "Alex",
       location: "Tokyo",
       avatar: "http://localhost:8080/user3.png",
       bio: "こんにちは！",
@@ -48,7 +48,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 4,
-      name: "Emily Lee",
+      name: "Emily",
       location: "New York",
       avatar: "http://localhost:8080/user4.png",
       bio: "I enjoy playing the piano",
@@ -61,7 +61,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 5,
-      name: "David Garcia",
+      name: "David",
       location: "Barcelona",
       avatar: "http://localhost:8080/user5.png",
       bio: "¡Hola!",
@@ -74,7 +74,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 6,
-      name: "Alessandra Rossi",
+      name: "Alessandra",
       location: "Rome",
       avatar: "http://localhost:8080/user6.png",
       bio: "Ciao!",
@@ -87,7 +87,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 7,
-      name: "Luis Hernandez",
+      name: "Luis",
       location: "New York",
       avatar: "http://localhost:8080/user7.png",
       bio: "hi guys",
@@ -100,7 +100,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 8,
-      name: "Marta Rodriguez",
+      name: "Marta",
       location: "Barcelona",
       avatar: "http://localhost:8080/user8.png",
       bio: "Me encanta la playa",
@@ -113,7 +113,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 9,
-      name: "Thomas Müller",
+      name: "Thomas",
       location: "Berlin",
       avatar: "http://localhost:8080/user9.png",
       bio: "Ich mag Fußball",
@@ -126,7 +126,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 10,
-      name: "Yuuki Nakamura",
+      name: "Yuuki",
       location: "Tokyo",
       avatar: "http://localhost:8080/user10.png",
       bio: "私は寿司が好きです",
@@ -139,7 +139,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 11,
-      name: "Maria Sanchez",
+      name: "Maria",
       location: "Paris",
       avatar: "http://localhost:8080/user11.png",
       bio: "Je suis fan de la cuisine française",
@@ -152,7 +152,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 12,
-      name: "Paolo Bianchi",
+      name: "Paolo",
       location: "Rome",
       avatar: "http://localhost:8080/user12.png",
       bio: "Mi piace fare sport",
@@ -165,7 +165,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 13,
-      name: "Johannes Schmidt",
+      name: "Johannes",
       location: "Berlin",
       avatar: "http://localhost:8080/user13.png",
       bio: "Ich reise gerne",
@@ -178,7 +178,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 14,
-      name: "Akiko Tanaka",
+      name: "Akiko",
       location: "Tokyo",
       avatar: "http://localhost:8080/user14.png",
       bio: "私は映画が好きです",
@@ -191,7 +191,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 15,
-      name: "Olivia Jones",
+      name: "Olivia",
       location: "New York",
       avatar: "http://localhost:8080/user15.png",
       bio: "I enjoy hiking and camping",
@@ -204,7 +204,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 16,
-      name: "Lucas Martin",
+      name: "Lucas",
       location: "Barcelona",
       avatar: "http://localhost:8080/user16.png",
       bio: "Me gusta la música",
@@ -217,7 +217,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 17,
-      name: "Elena Russo",
+      name: "Elena",
       location: "Rome",
       avatar: "http://localhost:8080/user17.png",
       bio: "Mi piace viaggiare",
@@ -230,7 +230,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 18,
-      name: "Sophie Laurent",
+      name: "Sophie",
       location: "Paris",
       avatar: "http://localhost:8080/user18.png",
       bio: "J'aime aller au cinéma",
@@ -243,7 +243,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 19,
-      name: "Sophie Müller",
+      name: "Sophie",
       location: "Berlin",
       avatar: "http://localhost:8080/user19.png",
       bio: "Ich mag Kunst",
@@ -256,7 +256,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 20,
-      name: "Carlos Hernandez",
+      name: "Carlos",
       location: "Barcelona",
       avatar: "http://localhost:8080/user20.png",
       bio: "Me gusta la naturaleza",
