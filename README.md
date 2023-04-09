@@ -1,9 +1,15 @@
-# armance-capstone: SALUT
+# SALUT
 SALUT is a web application that helps individuals relocating to a new country who want to socialize. With SALUT, users can join groups of like-minded people based on location, hobbies and languages that the user selects.
 
 ## Description
-Relocating to a new country can be a an amazing experience. But it also comes with it challenges too, including loneliness. Many nomads struggle to meet new people when they reach their new location, leading to feeling lonely.
+Relocating to a new country can be a an amazing experience but it also comes with it challenges too, including loneliness. Many nomads struggle to meet new people when they reach their new location, leading to feeling lonely.
 SALUT was created to solve this problem by providing a platform for nomads to connect with others who share similar interests.
+
+## Table of Content 
+- [Features and user Flow](#features)
+- [Installation](#installation)
+- [End Points](#endpoints)
+- [Conclusion](#conclusion)
 
 
 ## Features 
@@ -14,6 +20,11 @@ SALUT was created to solve this problem by providing a platform for nomads to co
 - Select languages
 - Join groups based on user's interests
 - Search for groups by interest
+- Look at a group member's profile page
+
+## User Flow
+![UserFlow](https://user-images.githubusercontent.com/122279872/230796935-ac5e6a2a-0855-4017-95b8-6b95458ba511.png)
+
 
     
 
@@ -21,9 +32,12 @@ SALUT was created to solve this problem by providing a platform for nomads to co
 
 1. Clone the repository: `git clone https://github.com/moomance/armance-capstone.git`
 2. Install the dependencies: `npm install`
-3. Set up the database: `npm run capstone`
-4. Start the client: `npm start`
-5. Start the server: `node --watch index.js`
+3. Set up the database: `mysql -u root -p`
+4. Create database `CREATE DATABASE capstone`
+5. Once you have a database to use, update the knexfile.js with your user, password, and database information. 
+6. Create a .env file based on .env.example, and update your password information
+7. Start the client: `npm start`
+8. Start the server: `node --watch index.js`
 
 
 ## Endpoints
@@ -53,6 +67,8 @@ Functionality:  Get a list of all hobbies
 ]
 ```
 
+
+--- 
 ### Table 3: 03-user_hobbies
 
 ### GET api/user_hobbies/:user_id 
@@ -104,6 +120,8 @@ Functionality: Get a list of each users' hobbies
 ]
 ```
 
+
+--- 
 ### Table 4: 04-group_details
 
 ### GET api/groups 
@@ -135,7 +153,7 @@ Functionality: Get a list of groups
 ```
 
 
-
+---
 ### GET api/groups/:id
 Functionality: Get information of a single group
 
@@ -152,7 +170,7 @@ Functionality: Get information of a single group
 ```
 
 
-
+---
 ### GET api/user_groups/:group_id
 Functionality: Get information of a group's user's name and photo
 
@@ -188,6 +206,7 @@ Functionality: Get information of a group's user's name and photo
 ]
 ```
 
+---
 
 ### Errors
 - This API may return a 400 or 404 error
@@ -197,4 +216,26 @@ Functionality: Get information of a group's user's name and photo
   "message": "Error retrieving data"
 }
 ```
+---
+## Conclusion 
 
+### Teck Stack used 
+
+#### Front end: 
+- React
+- SAAS 
+- Axios
+
+#### Back End : 
+- Node 
+- Express
+- cors
+- knex
+- mySQL 
+- mySQL Workbench
+
+### Lessons learned and next steps
+
+As I developed this project, I encountered a number of challenges that allowed me to strengthen the new skills I have learned over the past three months.  I also learned the importance of staying flexible and adaptable. I faced undexpected challenges for this project and, by being flexible, I was better equipped to overcome these challenges and find creative solutions to problems.
+
+Next steps for this project would be to add the possibility to message a group as well as creating new groups and events. 
