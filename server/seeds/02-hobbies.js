@@ -8,62 +8,62 @@ exports.seed = async function (knex) {
   await knex("hobbies").insert([
     {
       id: 1,
-      name: "Photography",
+      hobby: "Photography",
       icon: "U+1F4F8",
     },
     {
       id: 2,
-      name: "Hiking",
+      hobby: "Hiking",
       icon: "U+1F97E",
     },
     {
       id: 3,
-      name: "Cooking",
+      hobby: "Cooking",
       icon: "U+1F373",
     },
     {
       id: 4,
-      name: "Painting",
+      hobby: "Painting",
       icon: "U+1F3A8",
     },
     {
       id: 5,
-      name: "Gaming",
+      hobby: "Gaming",
       icon: "U+1F3AE",
     },
     {
       id: 6,
-      name: "Yoga",
+      hobby: "Yoga",
       icon: "U+1F9D8",
     },
     {
       id: 7,
-      name: "Music",
+      hobby: "Music",
       icon: "U+1F3A7",
     },
     {
       id: 8,
-      name: "Dancing",
+      hobby: "Dancing",
       icon: "U+1F57A",
     },
     {
       id: 9,
-      name: "Board Games",
+      hobby: "Board Games",
       icon: "U+265F",
     },
     {
       id: 10,
-      name: "Drinking",
+      hobby: "Drinking",
       icon: "U+1F37A",
     },
     {
       id: 11,
-      name: "Sports",
+      hobby: "Sports",
       icon: "U+1F3C8",
     },
     {
       id: 12,
-      name: "Movies",
+      hobby: "Movies",
       icon: "U+1F4FD",
     },
   ]);

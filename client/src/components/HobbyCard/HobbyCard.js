@@ -15,7 +15,7 @@ export default function HobbyCard({ h, hobbies, handleClick }) {
       }}
     >
       <div className="icon">{renderIcon(h.icon)}</div>
-      <h6 className="name">{h.name}</h6>
+      <h6 className="name">{h.hobby}</h6>
     </div>
   );
 }

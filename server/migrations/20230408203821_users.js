@@ -4,7 +4,7 @@
  */
 exports.up = function (knex) {
   return knex.schema.createTable("users", function (table) {
-    table.increments("id").primary();
+    table.increments("userId").primary();
     table.string("name", 50).notNullable();
     table.string("location", 100);
     table.string("avatar", 255);

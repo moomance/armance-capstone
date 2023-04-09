@@ -10,14 +10,14 @@ export default function GroupCard({ group }) {
   //   navigate(`/groups/${group.id}`);
   // }
   function groupDetails() {
-    navigate(`/groups/${group.id}`);
+    navigate(`/groups/${group.groupId}`);
   }
   return (
     <div className="group__card" onClick={groupDetails}>
       <div className="group__details">
         <div className="group__name">
-          <img className="group__image" alt="group" src={group.image} />
-          <h5 className="group__title">{group.name}</h5>
+          <img className="group__image" alt="group" src={group.group_image} />
+          <h5 className="group__title">{group.group_name}</h5>
         </div>
         <div className="group__members">
           <div className="group__photos">
@@ -27,7 +27,7 @@ export default function GroupCard({ group }) {
         </div>
       </div>
       <div className="group__content">
-        <p>{group.bio}</p>
+        <p>{group.group_bio}</p>
       </div>
     </div>
   );

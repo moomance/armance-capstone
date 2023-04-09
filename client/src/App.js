@@ -21,7 +21,7 @@ function App() {
   const [name, setName] = useState("");
   const [hobbies, setHobbies] = useState([{}]);
   const [langues, setLangues] = useState([{}]);
-
+  const [userDetails, setUserDetails] = useState([{}]);
   const results = [
     {
       name: name,
@@ -43,6 +43,7 @@ function App() {
   //   }
   // };
 
+  console.log(userDetails);
   console.log(results);
   console.log(name);
   console.log(location);
@@ -56,8 +57,19 @@ function App() {
         <Route path="/" element={<SignUpPage />} />
         <Route path="/profile" element={<ProfilePage results={results} />} />
         <Route path="/groups" element={<GroupsPage />} />
-        <Route path="/groups/:groupId" element={<GroupDetailsPage />} />
-        <Route path="/users/:userId" element={<UserProfilePage />} />
+        <Route
+          path="/groups/:groupId"
+          element={
+            <GroupDetailsPage
+              userDetails={userDetails}
+              setUserDetails={setUserDetails}
+            />
+          }
+        />
+        <Route
+          path="/users/:userId"
+          element={<UserProfilePage userDetails={userDetails} />}
+        />
 
         <Route
           path="/form"

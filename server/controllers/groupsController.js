@@ -12,8 +12,8 @@ exports.getAll = (_req, res) => {
 exports.getSingle = (req, res) => {
   knex("group_details")
     // .join("warehouses", "warehouses.id", "inventories.warehouse_id")
-    .select("id", "name", "bio", "image")
-    .where({ id: req.params.id })
+    .select("groupId", "group_name", "group_bio", "group_image")
+    .where({ groupId: req.params.id })
     .then((data) => {
       if (!data.length) {
         return res

@@ -2,13 +2,26 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
+exports.seed = async function (knex) {
+  // Deletes ALL existing entries
+  await knex("table_name").del();
+  await knex("table_name").insert([
+    { id: 1, colName: "rowValue1" },
+    { id: 2, colName: "rowValue2" },
+    { id: 3, colName: "rowValue3" },
+  ]);
+};
+/**
+ * @param { import("knex").Knex } knex
+ * @returns { Promise<void> }
+ */
 
 exports.seed = async function (knex) {
   // Deletes ALL existing entries
   await knex("users").del();
   await knex("users").insert([
     {
-      id: 1,
+      userId: 1,
       name: "John",
       location: "New York",
       avatar: "http://localhost:8080/user1.png",
@@ -21,7 +34,7 @@ exports.seed = async function (knex) {
       language6: "Japanese",
     },
     {
-      id: 2,
+      userId: 2,
       name: "Sarah",
       avatar: "http://localhost:8080/user2.png",
       location: "Paris",
@@ -34,7 +47,7 @@ exports.seed = async function (knex) {
       language6: "Japanese",
     },
     {
-      id: 3,
+      userId: 3,
       name: "Alex",
       location: "Tokyo",
       avatar: "http://localhost:8080/user3.png",
@@ -47,7 +60,7 @@ exports.seed = async function (knex) {
       language6: "German",
     },
     {
-      id: 4,
+      userId: 4,
       name: "Emily",
       location: "New York",
       avatar: "http://localhost:8080/user4.png",
@@ -60,7 +73,7 @@ exports.seed = async function (knex) {
       language6: "German",
     },
     {
-      id: 5,
+      userId: 5,
       name: "David",
       location: "Barcelona",
       avatar: "http://localhost:8080/user5.png",
@@ -73,7 +86,7 @@ exports.seed = async function (knex) {
       language6: "German",
     },
     {
-      id: 6,
+      userId: 6,
       name: "Alessandra",
       location: "Rome",
       avatar: "http://localhost:8080/user6.png",
@@ -86,7 +99,7 @@ exports.seed = async function (knex) {
       language6: "German",
     },
     {
-      id: 7,
+      userId: 7,
       name: "Luis",
       location: "New York",
       avatar: "http://localhost:8080/user7.png",
@@ -99,7 +112,7 @@ exports.seed = async function (knex) {
       language6: "German",
     },
     {
-      id: 8,
+      userId: 8,
       name: "Marta",
       location: "Barcelona",
       avatar: "http://localhost:8080/user8.png",
@@ -112,7 +125,7 @@ exports.seed = async function (knex) {
       language6: "German",
     },
     {
-      id: 9,
+      userId: 9,
       name: "Thomas",
       location: "Berlin",
       avatar: "http://localhost:8080/user9.png",
@@ -125,7 +138,7 @@ exports.seed = async function (knex) {
       language6: "Spanish",
     },
     {
-      id: 10,
+      userId: 10,
       name: "Yuuki",
       location: "Tokyo",
       avatar: "http://localhost:8080/user10.png",
@@ -138,7 +151,7 @@ exports.seed = async function (knex) {
       language6: "German",
     },
     {
-      id: 11,
+      userId: 11,
       name: "Maria",
       location: "Paris",
       avatar: "http://localhost:8080/user11.png",
@@ -151,7 +164,7 @@ exports.seed = async function (knex) {
       language6: "German",
     },
     {
-      id: 12,
+      userId: 12,
       name: "Paolo",
       location: "Rome",
       avatar: "http://localhost:8080/user12.png",
@@ -164,7 +177,7 @@ exports.seed = async function (knex) {
       language6: "German",
     },
     {
-      id: 13,
+      userId: 13,
       name: "Johannes",
       location: "Berlin",
       avatar: "http://localhost:8080/user13.png",
@@ -177,7 +190,7 @@ exports.seed = async function (knex) {
       language6: "Spanish",
     },
     {
-      id: 14,
+      userId: 14,
       name: "Akiko",
       location: "Tokyo",
       avatar: "http://localhost:8080/user14.png",
@@ -190,7 +203,7 @@ exports.seed = async function (knex) {
       language6: "German",
     },
     {
-      id: 15,
+      userId: 15,
       name: "Olivia",
       location: "New York",
       avatar: "http://localhost:8080/user15.png",
@@ -203,7 +216,7 @@ exports.seed = async function (knex) {
       language6: "German",
     },
     {
-      id: 16,
+      userId: 16,
       name: "Lucas",
       location: "Barcelona",
       avatar: "http://localhost:8080/user16.png",
@@ -216,7 +229,7 @@ exports.seed = async function (knex) {
       language6: "German",
     },
     {
-      id: 17,
+      userId: 17,
       name: "Elena",
       location: "Rome",
       avatar: "http://localhost:8080/user17.png",
@@ -229,7 +242,7 @@ exports.seed = async function (knex) {
       language6: "German",
     },
     {
-      id: 18,
+      userId: 18,
       name: "Sophie",
       location: "Paris",
       avatar: "http://localhost:8080/user18.png",
@@ -242,7 +255,7 @@ exports.seed = async function (knex) {
       language6: "German",
     },
     {
-      id: 19,
+      userId: 19,
       name: "Sophie",
       location: "Berlin",
       avatar: "http://localhost:8080/user19.png",
@@ -255,7 +268,7 @@ exports.seed = async function (knex) {
       language6: "Spanish",
     },
     {
-      id: 20,
+      userId: 20,
       name: "Carlos",
       location: "Barcelona",
       avatar: "http://localhost:8080/user20.png",

@@ -18,7 +18,7 @@ app.use(express.static("public"));
 // generic get
 app.use("/api/users", usersRoutes);
 app.use("/api/hobbies", hobbiesRoutes);
-app.use("/api/user_hobbies", userHobbiesRoutes);
+app.use("/api/user_hobbies/", userHobbiesRoutes);
 app.use("/api/groups", groupsRoutes);
 app.use("/api/user_groups", userGroupsRoutes);
 
