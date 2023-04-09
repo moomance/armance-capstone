@@ -56,13 +56,26 @@ function App() {
       <Routes>
         <Route path="/" element={<SignUpPage />} />
         <Route path="/profile" element={<ProfilePage results={results} />} />
-        <Route path="/groups" element={<GroupsPage />} />
+        <Route
+          path="/groups"
+          element={
+            <GroupsPage
+              location={location}
+              hobbies={hobbies}
+              langues={langues}
+              results={results}
+            />
+          }
+        />
         <Route
           path="/groups/:groupId"
           element={
             <GroupDetailsPage
               userDetails={userDetails}
               setUserDetails={setUserDetails}
+              location={location}
+              hobbies={hobbies}
+              langues={langues}
             />
           }
         />

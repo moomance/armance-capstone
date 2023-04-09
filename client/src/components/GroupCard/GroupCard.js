@@ -3,7 +3,7 @@ import "./GroupCard.scss";
 
 import { useNavigate } from "react-router-dom";
 
-export default function GroupCard({ group }) {
+export default function GroupCard({ group, location, hobbies, langues }) {
   const navigate = useNavigate();
 
   // function groupDetails() {

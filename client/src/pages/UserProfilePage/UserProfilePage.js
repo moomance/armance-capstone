@@ -1,19 +1,48 @@
 import avatar from "../../assets/images/avatar.png";
 import "./UserProfilePage.scss";
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { useParams } from "react-router-dom";
 
 // components
-
-import PreferedLanguageCard from "../../components/PreferedLanguageCard/PreferedLanguageCard";
-import PreferedHobbyCard from "../../components/PreferedHobbyCard/PreferedHobbyCard";
-import CurrentLocationCard from "../../components/CurrentLocationCard/CurrentLocationCard";
-import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import BackArrow from "../../components/BackArrow/BackArrow";
 import UserProfileHobbiesCard from "../../components/UserProfileHobbiesCard/UserProfileHobbiesCard";
 
 export default function UserProfilePage({ userDetails }) {
+  const [icon, setIcon] = useState("Paris");
+
+  const flagIcon = (language) => {
+    switch (language) {
+      case "French":
+        return "🇫🇷";
+      case "English":
+        return "🇺🇸";
+      case "Spanish":
+        return "🇪🇸";
+      case "German":
+        return "🇩🇪";
+      case "Italian":
+        return "🇮🇹";
+      case "Japanese":
+        return "🇯🇵";
+    }
+  };
+
+  const locationFlag = (location) => {
+    switch (location) {
+      case "New York":
+        return "🇺🇸";
+      case "Paris":
+        return "🇫🇷";
+      case "Tokyo":
+        return "🇯🇵";
+      case "Barcelona":
+        return "🇪🇸";
+      case "Rome":
+        return "🇮🇹";
+      case "Berlin":
+        return "🇩🇪";
+    }
+  };
   return (
     <div className="profile__page">
       <div className="profile">
@@ -31,30 +60,35 @@ export default function UserProfilePage({ userDetails }) {
       </div>
       <div className="profile__category">
         <h5 className="profile__title">My hobbies ({userDetails.length})</h5>
-        {userDetails.map((userDetail) => {
-          return <UserProfileHobbiesCard userDetail={userDetail} />;
-        })}
+        <div className="profile__container">
+          {userDetails.map((userDetail) => {
+            return <UserProfileHobbiesCard userDetail={userDetail} />;
+          })}
+        </div>
       </div>
       <div className="profile__category">
-        <h5 className="profile__title">Prefered languages</h5>
-
-        <div className="card__profile">
-          <div className="icon">hi</div>
-          <h6 className="name">{userDetails[0].language3}</h6>
-        </div>
-        <div className="card__profile">
-          <div className="icon">hi</div>
-          <h6 className="name">{userDetails[0].language1}</h6>
-        </div>
-        <div className="card__profile">
-          <div className="icon">hi</div>
-          <h6 className="name">{userDetails[0].language2}</h6>
+        <h5 className="profile__title">
+          Prefered languages ({userDetails.length})
+        </h5>
+        <div className="profile__container">
+          <div className="card__profile">
+            <div className="icon">{flagIcon(userDetails[0].language1)}</div>
+            <h6 className="name">{userDetails[0].language1}</h6>
+          </div>
+          <div className="card__profile">
+            <div className="icon">{flagIcon(userDetails[0].language2)}</div>
+            <h6 className="name">{userDetails[0].language2}</h6>
+          </div>
+          <div className="card__profile">
+            <div className="icon">{flagIcon(userDetails[0].language3)}</div>
+            <h6 className="name">{userDetails[0].language3}</h6>
+          </div>
         </div>
       </div>
       <div className="profile__category">
         <h5 className="profile__title">Current location</h5>
         <div className="card__profile">
-          <div className="icon">hi</div>
+          <div className="icon">{locationFlag(userDetails[0].location)}</div>
           <h6 className="name">{userDetails[0].location}</h6>
         </div>
       </div>

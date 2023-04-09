@@ -53,6 +53,7 @@
     &__button {
         @include button ($accent, $accent, $white, 37.4rem);
         margin-top: 6rem;
+        cursor: pointer;
     }
 }
 
@@ -60,3 +61,69 @@
 .details__users::-webkit-scrollbar{
     display: none;
 }
+
+.modal{
+   background-color:white;
+   border: none;
+   width: 36rem;
+   height: 36rem;
+   border-radius: 10px;
+   padding: 4rem;
+   border: 3px solid $light-grey;
+   position: relative;
+   
+
+   margin: auto;
+   margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__close {
+    width: 2.5rem;
+    height:2.5rem;
+    position: absolute;
+    left:10%;
+    top:10%;
+  }
+
+  &__icon {
+    width: 11.4rem;
+    height: 11.4rem;
+    margin: auto;
+    border-radius: 50%;
+   padding: 2.6rem;
+   padding-left: 3.4rem;
+    background-color:#F4F4F4 ;
+    font-size: 5.4rem;
+  }
+
+ 
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  &__description{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    color: $black;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 2.9rem;
+   
+  }
+
+
+}
+
