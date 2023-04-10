@@ -9,29 +9,14 @@ let languages = [
     icon: "🇺🇸",
   },
   {
-    id: 2,
-    language: "French",
-    icon: "🇫🇷",
-  },
-  {
     id: 3,
     language: "Spanish",
     icon: "🇪🇸",
   },
   {
-    id: 4,
-    language: "German",
-    icon: "🇩🇪",
-  },
-  {
-    id: 5,
-    language: "Italian",
-    icon: "🇮🇹",
-  },
-  {
-    id: 6,
-    language: "Japanese",
-    icon: "🇯🇵",
+    id: 2,
+    language: "French",
+    icon: "🇫🇷",
   },
 ];
 

@@ -12,34 +12,16 @@ let locations = [
     city: "New York",
   },
   {
-    id: 2,
-    location: "Paris, France",
-    icon: "🇫🇷",
-    city: "Paris",
-  },
-  {
     id: 3,
     location: "Barcelona, Spain",
     icon: "🇪🇸",
     city: "Barcelona",
   },
   {
-    id: 4,
-    location: "Berlin, Germany",
-    icon: "🇩🇪",
-    city: "Berlin",
-  },
-  {
-    id: 5,
-    location: "Rome, Italy",
-    icon: "🇮🇹",
-    city: "Rome",
-  },
-  {
-    id: 6,
-    location: "Tokyo, Japan",
-    icon: "🇯🇵",
-    city: "Tokyo",
+    id: 2,
+    location: "Paris, France",
+    icon: "🇫🇷",
+    city: "Paris",
   },
 ];
 
