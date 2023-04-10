@@ -33,7 +33,7 @@ exports.seed = async function (knex) {
       group_location: "Tokyo",
       group_bio:
         "We are a group of foodies who love to cook and share our favorite Japanese recipes with others.",
-      group_language: "Japanese",
+      group_language: "English",
       group_hobby: "Cooking",
     },
     {
@@ -53,7 +53,7 @@ exports.seed = async function (knex) {
       group_location: "Rome",
       group_bio:
         "We are a group of gamers who love to play board games, card games, and video games in Rome.",
-      group_language: "Italian",
+      group_language: "English",
       group_hobby: "Gaming",
     },
     {
@@ -63,7 +63,7 @@ exports.seed = async function (knex) {
       group_location: "Berlin",
       group_bio:
         "We are a group of yogis who love to practice yoga and meditation in the parks and gardens of Berlin.",
-      group_language: "German",
+      group_language: "English",
       group_hobby: "Yoga",
     },
     {
@@ -93,7 +93,7 @@ exports.seed = async function (knex) {
       group_location: "Tokyo",
       group_bio:
         "We are a group of board game enthusiasts who love to play and discuss all kinds of board games in Tokyo.",
-      group_language: "Japanese",
+      group_language: "French",
       group_hobby: "Board Games",
     },
     {
@@ -113,7 +113,7 @@ exports.seed = async function (knex) {
       group_location: "Tokyo",
       group_bio:
         "We are a group of ramen lovers who love to explore and taste different types of ramen in Tokyo.",
-      group_language: "Japanese",
+      group_language: "English",
       group_hobby: "Drinking",
     },
     {
@@ -123,7 +123,7 @@ exports.seed = async function (knex) {
       group_location: "Rome",
       group_bio:
         "We are a group of sports enthusiasts who love to play and watch different sports in Rome.",
-      group_language: "Italian",
+      group_language: "English",
       group_hobby: "Sports",
     },
     {
@@ -133,7 +133,7 @@ exports.seed = async function (knex) {
       group_location: "Berlin",
       group_bio:
         "We are a group of movie lovers who love to watch and discuss all kinds of movies in Berlin.",
-      group_language: "German",
+      group_language: "English",
       group_hobby: "Movies",
     },
     {
@@ -143,7 +143,7 @@ exports.seed = async function (knex) {
       group_location: "Paris",
       group_bio:
         "We are a group of wine and cheese lovers who love to taste and learn about different wines and cheeses in Paris.",
-      group_language: "French",
+      group_language: "English",
       group_hobby: "Drinking",
     },
     {
@@ -163,7 +163,7 @@ exports.seed = async function (knex) {
       group_location: "Tokyo",
       group_bio:
         "We are a group of sake lovers who love to taste and learn about different types of sake in Tokyo.",
-      group_language: "Japanese",
+      group_language: "French",
       group_hobby: "Drinking",
     },
     {
@@ -173,7 +173,7 @@ exports.seed = async function (knex) {
       group_location: "Barcelona",
       group_bio:
         "We are a group of football fans who love to watch and support FC Barcelona in the local bars and stadiums.",
-      group_language: "Spanish",
+      group_language: "French",
       group_hobby: "Sports",
     },
     {
@@ -183,7 +183,7 @@ exports.seed = async function (knex) {
       group_location: "Rome",
       group_bio:
         "We are a group of movie enthusiasts who love to attend and participate in the annual Rome Film Festival.",
-      group_language: "Italian",
+      group_language: "English",
       group_hobby: "Movies",
     },
     {
@@ -193,7 +193,7 @@ exports.seed = async function (knex) {
       group_location: "Berlin",
       group_bio:
         "We are a group of language learners who love to practice and improve our language skills through conversation and cultural exchange over a drink.",
-      group_language: "German",
+      group_language: "Spanish",
       group_hobby: "Drinking",
     },
     {
@@ -203,7 +203,7 @@ exports.seed = async function (knex) {
       group_location: "Berlin",
       group_bio:
         "We are a group of hikers who love to explore and conquer the mountains near Berlin.",
-      group_language: "German",
+      group_language: "Spanish",
       group_hobby: "Hiking",
     },
     {
@@ -213,7 +213,7 @@ exports.seed = async function (knex) {
       group_location: "Paris",
       group_bio:
         "We are a group of wine lovers who love to taste and learn about French wines in Paris.",
-      group_language: "French",
+      group_language: "English",
       group_hobby: "Drinking",
     },
     {
@@ -243,7 +243,7 @@ exports.seed = async function (knex) {
       group_location: "Rome",
       group_bio:
         "We are a group of photography enthusiasts who love to capture the beauty and history of Rome through our lenses.",
-      group_language: "Italian",
+      group_language: "Spanish",
       group_hobby: "Photography",
     },
     {
@@ -263,7 +263,7 @@ exports.seed = async function (knex) {
       group_location: "Tokyo",
       group_bio:
         "We are a group of music lovers who love to sing and have fun in the karaoke bars of Tokyo.",
-      group_language: "Japanese",
+      group_language: "English",
       group_hobby: "Music",
     },
     {
@@ -273,7 +273,7 @@ exports.seed = async function (knex) {
       group_location: "Berlin",
       group_bio:
         "We are a group of beer lovers who love to taste and learn about different types of beer in Berlin.",
-      group_language: "German",
+      group_language: "English",
       group_hobby: "Drinking",
     },
     {
@@ -283,7 +283,7 @@ exports.seed = async function (knex) {
       group_location: "Paris",
       group_bio:
         "We are a group of yoga enthusiasts who love to practice and connect with nature in the parks of Paris.",
-      group_language: "French",
+      group_language: "English",
       group_hobby: "Yoga",
     },
     {
@@ -293,7 +293,7 @@ exports.seed = async function (knex) {
       group_location: "Barcelona",
       group_bio:
         "We are a group of food lovers who love to cook and learn new recipes in Barcelona.",
-      group_language: "Spanish",
+      group_language: "English",
       group_hobby: "Cooking",
     },
     {
@@ -303,7 +303,7 @@ exports.seed = async function (knex) {
       group_location: "Rome",
       group_bio:
         "We are a group of movie lovers who love to watch and discuss classic Italian movies in Rome.",
-      group_language: "Italian",
+      group_language: "English",
       group_hobby: "Movies",
     },
     {
@@ -323,16 +323,65 @@ exports.seed = async function (knex) {
       group_location: "Tokyo",
       group_bio:
         "We are a group of dance enthusiasts who love to learn and perform different styles of dance in Tokyo.",
-      group_language: "Japanese",
+      group_language: "English",
       group_hobby: "Dancing",
     },
     {
       groupId: 33,
       group_name: "French Food Lovers",
       group_image: "http://localhost:8080/group33.png",
-      group_location: "France",
+      group_location: "Paris",
       group_bio: "A group for foodies who love French cuisine.",
-      group_language: "French",
+      group_language: "English",
+      group_hobby: "Drinking",
+    },
+    {
+      groupId: 34,
+      group_name: "Barcelona Cooking Class",
+      group_image: "http://localhost:8080/group29.png",
+      group_location: "Barcelona",
+      group_bio:
+        "We are a group of food lovers who love to cook and learn new recipes in Barcelona.",
+      group_language: "Spanish",
+      group_hobby: "Cooking",
+    },
+    {
+      groupId: 35,
+      group_name: "Rome Cinema Paradiso",
+      group_image: "http://localhost:8080/group30.png",
+      group_location: "Rome",
+      group_bio:
+        "We are a group of movie lovers who love to watch and discuss classic Italian movies in Rome.",
+      group_language: "Spanish",
+      group_hobby: "Movies",
+    },
+    {
+      groupId: 36,
+      group_name: "New York Running Club",
+      group_image: "http://localhost:8080/group31.png",
+      group_location: "New York",
+      group_bio:
+        "We are a group of runners who love to explore and challenge ourselves on the streets of New York City.",
+      group_language: "English",
+      group_hobby: "Sports",
+    },
+    {
+      groupId: 37,
+      group_name: "Tokyo Dance Workshop",
+      group_image: "http://localhost:8080/group32.png",
+      group_location: "Tokyo",
+      group_bio:
+        "We are a group of dance enthusiasts who love to learn and perform different styles of dance in Tokyo.",
+      group_language: "English",
+      group_hobby: "Dancing",
+    },
+    {
+      groupId: 38,
+      group_name: "French Food Lovers",
+      group_image: "http://localhost:8080/group33.png",
+      group_location: "Paris",
+      group_bio: "A group for foodies who love French cuisine.",
+      group_language: "English",
       group_hobby: "Drinking",
     },
   ]);

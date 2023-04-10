@@ -11,9 +11,9 @@
     flex-wrap: wrap;
 
     &__image {
+        margin-top: 3rem;
         width: 35.1rem;
         height: 33.4rem;
-
     }
 
     &__hero {
@@ -30,15 +30,12 @@
     }
 
     &__buttons {
-
-        margin-top: 2rem;
-       
-
+        margin-top: 2rem;   
     }
+
     &__button {
         @include button ($accent, $accent, $white, 37.4rem );
-
-    }
+    } 
 
 }
 

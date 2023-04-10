@@ -3,7 +3,7 @@ import "./GroupCard.scss";
 
 import { useNavigate } from "react-router-dom";
 
-export default function GroupCard({ group, location, hobbies, langues }) {
+export default function GroupCard({ group }) {
   const navigate = useNavigate();
 
   // function groupDetails() {
@@ -19,12 +19,12 @@ export default function GroupCard({ group, location, hobbies, langues }) {
           <img className="group__image" alt="group" src={group.group_image} />
           <h5 className="group__title">{group.group_name}</h5>
         </div>
-        <div className="group__members">
+        {/* <div className="group__members">
           <div className="group__photos">
             <img className="photo" alt="user" src={hiking} />
           </div>
           <p className="group__number">+5</p>
-        </div>
+        </div> */}
       </div>
       <div className="group__content">
         <p>{group.group_bio}</p>
