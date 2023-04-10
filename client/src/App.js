@@ -76,6 +76,7 @@ function App() {
               location={location}
               hobbies={hobbies}
               langues={langues}
+              name={name}
             />
           }
         />

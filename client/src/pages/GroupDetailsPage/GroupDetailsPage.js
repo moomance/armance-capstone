@@ -4,17 +4,22 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import ReactModal from "react-modal";
 import cross from "../../assets/icons/cross.png";
-
+import avatarPhoto from "../../assets/images/group.png";
 import BackArrow from "../../components/BackArrow/BackArrow";
 import { useEffect } from "react";
 import axios from "axios";
 
-export default function GroupDetailsPage({ setUserDetails }) {
+export default function GroupDetailsPage({ setUserDetails, name }) {
   const [group, setGroup] = useState([{}]);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [join, setJoin] = useState("Join the group");
+  // const [avatar, setAvatar] = useState(null);
+  const [isVisible, setIsVisible] = useState(false);
 
-  const openModal = () => {
+  const openModal = (name) => {
     setIsModalOpen(true);
+    setIsVisible(!isVisible);
+    setJoin("Send a message");
   };
 
   const closeModal = () => {
@@ -48,8 +53,18 @@ export default function GroupDetailsPage({ setUserDetails }) {
       </div>
       <img className="details__image" alt="group" src={group[0].group_image} />
       <div className="details__member">
-        <h2>Members ({group.length})</h2>
+        <h2>Members</h2>
+
         <div className="details__users">
+          {isVisible && (
+            <div className="user__card">
+              <img alt="user" className="user__image" src={avatarPhoto} />
+              <div className="user__name-container">
+                <p className="user__name">{name}</p>
+              </div>
+            </div>
+          )}
+
           {group.map((gr) => {
             return (
               <UserCard
@@ -66,7 +81,7 @@ export default function GroupDetailsPage({ setUserDetails }) {
         </div>
       </div>
       <div onClick={openModal} className="details__button">
-        Join the group
+        {join}
       </div>
       <ReactModal
         className="modal"

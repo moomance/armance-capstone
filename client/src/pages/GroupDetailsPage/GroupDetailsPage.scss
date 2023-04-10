@@ -47,12 +47,12 @@
     }
 
     &__description {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     &__button {
         @include button ($accent, $accent, $white, 37.4rem);
-        margin-top: 6rem;
+        margin-top: 4rem;
         cursor: pointer;
     }
 }
@@ -82,6 +82,10 @@
   &__container {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  &__content {
+    width: 100%;
   }
 
   &__close {

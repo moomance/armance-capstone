@@ -4,21 +4,23 @@
 
 .navigation {
 
-    position: fixed;
+    
     display: flex;
     justify-content: space-between;
-    width: 39rem;
+    width: 40rem;
     height:7.7rem;
     border-top: 1px solid #FFEAE2;
     align-items: center;
     padding: 0rem 5rem;
     background-color: $white;
    
-    position: fixed;
-    bottom: 4%;
-    left: 36.6%;
+
+    bottom: 2.5%;
+    left: 4%;
+    
     border-radius: 40px;
-    display: none;
+    position: absolute;
+
     
 
 
@@ -27,6 +29,8 @@
 
         justify-content: center;
         align-content: center;
+        text-decoration: none;
+        color: $black;
 
     }
 
@@ -36,6 +40,7 @@
         align-self: center;
         justify-content: center;
         margin: auto;
+   
 
     }
 
@@ -46,6 +51,7 @@
         &--bold{
             font-weight: 700;
             margin-top: 0.3rem;
+            text-decoration: none;
         }
     }
 
