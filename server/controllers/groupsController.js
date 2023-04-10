@@ -6,7 +6,7 @@ exports.getAll = (_req, res) => {
     .then((data) => {
       res.status(200).json(data);
     })
-    .catch((err) => res.status(400).send(`Error retrieving hobbies ${err}`));
+    .catch((err) => res.status(400).send(`Error retrieving group ${err}`));
 };
 
 exports.getSingle = (req, res) => {
@@ -23,6 +23,6 @@ exports.getSingle = (req, res) => {
       res.status(200).json(data[0]);
     })
     .catch((err) =>
-      res.status(400).send(`Error retrieving inventory ${req.params.id} ${err}`)
+      res.status(400).send(`Error retrieving group ${req.params.id} ${err}`)
     );
 };

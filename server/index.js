@@ -5,7 +5,6 @@ require("dotenv").config();
 const { PORT } = process.env;
 
 const hobbiesRoutes = require("./routes/hobbiesRoutes");
-const usersRoutes = require("./routes/usersRoutes");
 const groupsRoutes = require("./routes/groupsRoutes");
 const userHobbiesRoutes = require("./routes/userHobbiesRoutes");
 const userGroupsRoutes = require("./routes/userGroupsRoutes");
@@ -16,7 +15,7 @@ app.use(cors());
 app.use(express.static("public"));
 
 // generic get
-app.use("/api/users", usersRoutes);
+
 app.use("/api/hobbies", hobbiesRoutes);
 app.use("/api/user_hobbies/", userHobbiesRoutes);
 app.use("/api/groups", groupsRoutes);
