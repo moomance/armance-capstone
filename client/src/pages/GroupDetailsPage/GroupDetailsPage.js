@@ -13,7 +13,6 @@ export default function GroupDetailsPage({ setUserDetails, name }) {
   const [group, setGroup] = useState([{}]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [join, setJoin] = useState("Join the group");
-  // const [avatar, setAvatar] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
 
   const openModal = (name) => {
@@ -68,7 +67,7 @@ export default function GroupDetailsPage({ setUserDetails, name }) {
           {group.map((gr) => {
             return (
               <UserCard
-                key={gr.user_id}
+                key={gr.group_id}
                 gr={gr}
                 setUserDetails={setUserDetails}
               />

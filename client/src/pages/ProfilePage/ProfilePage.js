@@ -47,8 +47,9 @@ export default function ProfilePage({ results }) {
           <p className="profile__label">Write a fun and punchy intro</p>
           <div className="bio">
             <p className="bio__content">
-              Hi, I'm {results[0].name}! I love to travel and I'm in Mexico for
-              the next 6 months. Excited to meet new people and explore!
+              Hi, I'm {results[0].name}! I love to travel and I'm in{" "}
+              {results[0].location.city} for the next 6 months. Excited to meet
+              new people and explore!
             </p>
           </div>
         </div>

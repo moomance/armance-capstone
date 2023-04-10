@@ -1,5 +1,5 @@
 import LanguageCard from "../../components/LanguageCard/LanguageCard";
-
+import { useState } from "react";
 //components
 
 let languages = [
@@ -9,12 +9,12 @@ let languages = [
     icon: "🇺🇸",
   },
   {
-    id: 3,
+    id: 2,
     language: "Spanish",
     icon: "🇪🇸",
   },
   {
-    id: 2,
+    id: 3,
     language: "French",
     icon: "🇫🇷",
   },
@@ -29,12 +29,16 @@ export default function Languages({
   setLangues,
   Submit,
 }) {
+  const [isActive, setIsActive] = useState([]);
+
   const SelectLanguages = (langue) => {
     if (langues.includes(langue)) {
       setLangues(langues.filter((language) => language !== langue.id));
     } else {
       setLangues([...langues, langue]);
     }
+
+    setIsActive(langue);
   };
 
   return (
@@ -47,6 +51,7 @@ export default function Languages({
               language={language}
               key={language.id}
               Click={SelectLanguages}
+              isActive={isActive}
             />
           );
         })}

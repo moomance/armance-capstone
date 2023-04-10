@@ -62,7 +62,12 @@ export default function UserProfilePage({ userDetails }) {
         <h5 className="profile__title">My hobbies ({userDetails.length})</h5>
         <div className="profile__container">
           {userDetails.map((userDetail) => {
-            return <UserProfileHobbiesCard userDetail={userDetail} />;
+            return (
+              <UserProfileHobbiesCard
+                key={userDetail.userId}
+                userDetail={userDetail}
+              />
+            );
           })}
         </div>
       </div>

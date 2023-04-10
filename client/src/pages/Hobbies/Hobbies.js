@@ -7,6 +7,7 @@ import HobbyCard from "../../components/HobbyCard/HobbyCard";
 
 export default function Hobbies({ toPage, hobbies, setHobbies }) {
   const [activities, setActivities] = useState([]);
+
   const handleCardClick = (activity) => {
     if (hobbies.includes(activity)) {
       setHobbies(hobbies.filter((hobby) => hobby !== activity.id));
