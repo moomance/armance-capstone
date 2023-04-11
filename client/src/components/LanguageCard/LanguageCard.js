@@ -1,8 +1,4 @@
-import { useState } from "react";
-
 export default function LocationCard({ language, Click, isActive }) {
-  // const [isActive, setIsActive] = useState([]);
-
   return (
     <div
       id={language.id}

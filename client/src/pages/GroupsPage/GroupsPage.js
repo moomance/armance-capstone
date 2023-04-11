@@ -37,11 +37,6 @@ export default function GroupsPage({ results, location, hobbies, langues }) {
       .catch((err) => console.log(err));
   }, []);
 
-  const [typedSearch, setTypedSearch] = useState("");
-  const handleSearch = (e) => {
-    setTypedSearch(e.target.value);
-  };
-
   return (
     <div className="group">
       <Search />

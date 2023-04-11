@@ -1,6 +1,5 @@
 import "./ProfilePage.scss";
 import avatar from "../../assets/images/group.png";
-import { useNavigate } from "react-router-dom";
 
 // components
 import { Link } from "react-router-dom";
@@ -13,24 +12,6 @@ import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import settings from "../../assets/icons/settings.png";
 
 export default function ProfilePage({ results }) {
-  // let profileHobbies = results.map((loisir) => {
-  //   return (
-  //     <>
-  //       <div> {loisir.id} </div>
-  //       <div> {loisir.name} </div>
-  //       <div> {loisir.icon} </div>
-  //     </>
-  //   );
-  // });
-  const navigate = useNavigate();
-  console.log(results[0].name);
-  console.log(results[0].location);
-  console.log(results[0].langue.slice(1));
-  console.log(results[0].hobbies.slice(1));
-
-  function Click() {
-    navigate("/groups");
-  }
   return (
     <>
       <div className="profile__page" alt="profile">

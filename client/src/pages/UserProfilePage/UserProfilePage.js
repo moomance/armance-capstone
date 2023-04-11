@@ -1,15 +1,10 @@
-import avatar from "../../assets/images/avatar.png";
 import "./UserProfilePage.scss";
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 
 // components
 import BackArrow from "../../components/BackArrow/BackArrow";
 import UserProfileHobbiesCard from "../../components/UserProfileHobbiesCard/UserProfileHobbiesCard";
 
 export default function UserProfilePage({ userDetails }) {
-  const [icon, setIcon] = useState("Paris");
-
   const flagIcon = (language) => {
     switch (language) {
       case "French":
@@ -24,6 +19,8 @@ export default function UserProfilePage({ userDetails }) {
         return "🇮🇹";
       case "Japanese":
         return "🇯🇵";
+      default:
+        return "🇫🇷";
     }
   };
 
@@ -41,6 +38,8 @@ export default function UserProfilePage({ userDetails }) {
         return "🇮🇹";
       case "Berlin":
         return "🇩🇪";
+      default:
+        return "🇫🇷";
     }
   };
   return (
@@ -49,7 +48,11 @@ export default function UserProfilePage({ userDetails }) {
         <div className="backarrow">
           <BackArrow />
         </div>
-        <img className="profile__avatar" src={userDetails[0].avatar} />
+        <img
+          className="profile__avatar"
+          alt="avatar"
+          src={userDetails[0].avatar}
+        />
         <h5 className="profile__name">{userDetails[0].name}</h5>
       </div>
       <div className="profile__category">

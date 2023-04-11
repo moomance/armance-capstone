@@ -1,5 +1,4 @@
 import "./UserCard.scss";
-import josh from "../../assets/images/avatar.png";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect } from "react";
