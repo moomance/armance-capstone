@@ -219,7 +219,7 @@ Functionality: Get information of a group's user's name and photo
 ---
 ## Conclusion 
 
-### Teck Stack used 
+### Tech Stack used 
 
 #### Front end: 
 - React
