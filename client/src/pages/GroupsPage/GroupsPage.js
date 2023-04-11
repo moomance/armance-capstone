@@ -51,7 +51,7 @@ export default function GroupsPage({ results, location, hobbies, langues }) {
       <div className="group__suggestions">
         {filteredListGroups.map((group) => {
           console.log(group);
-          return <GroupCard group={group} />;
+          return <GroupCard key={group.groupId} group={group} />;
         })}
       </div>
       <NavigationBar />
