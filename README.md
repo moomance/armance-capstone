@@ -236,6 +236,6 @@ Functionality: Get information of a group's user's name and photo
 
 ### Lessons learned and next steps
 
-As I developed this project, I encountered a number of challenges that allowed me to strengthen the new skills I have learned over the past three months.  I also learned the importance of staying flexible and adaptable. I faced undexpected challenges for this project and, by being flexible, I was better equipped to overcome these challenges and find creative solutions to problems.
+As I developed this project, I encountered a number of challenges that allowed me to strengthen the new skills I have learned over the past three months.  I also learned the importance of staying flexible and adaptable. I faced unexpected challenges for this project and, by being flexible, I was better equipped to overcome these challenges and find creative solutions to problems.
 
-Next steps for this project would be to add the possibility to message a group as well as creating new groups and events. 
+Next steps for this project would be to add the possibility to message a group as well as create new groups and events. 
