@@ -7,7 +7,7 @@ SALUT was created to solve this problem by providing a platform for nomads to co
 
 ## My contributions
 
-Combining my proficiency in UX design with my software engineering background, I embarked on a significant endeavor as part of my studies' conclusion. This project was more than a mere showcase of front-end and back-end capabilities; it aimed to build a meaningful platform that solved real expats' needs. By applying a comprehensive approach encompassing the UX design double diamond process, UI design, and full-stack development, I was able to navigate the project from conceptualization to implementation, ensuring its relevance and usability for potential users. 
+Combining my proficiency in UX design with my software engineering background, I realized a 10-day project that I was passionate about to graduate from my studies in software engineering. This project was more than a mere showcase of front-end and back-end capabilities; it aimed to build a meaningful platform that solved real expats' needs. By applying a comprehensive approach encompassing the UX design double diamond process, UI design, and full-stack development, I was able to navigate the project from conceptualization to implementation, ensuring its relevance and usability for potential users. 
 
 
 ## Table of Content 
