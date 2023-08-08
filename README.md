@@ -5,6 +5,11 @@ SALUT is a web application that helps individuals relocating to a new country wh
 Relocating to a new country can be a an amazing experience but it also comes with it challenges too, including loneliness. Many nomads struggle to meet new people when they reach their new location, leading to feeling lonely.
 SALUT was created to solve this problem by providing a platform for nomads to connect with others who share similar interests.
 
+## My contributions
+
+Combining my proficiency in UX design with my software engineering background, I embarked on a significant endeavor as part of my studies' conclusion. This project was more than a mere showcase of front-end and back-end capabilities; it aimed to build a meaningful platform that solved real expats' needs. By applying a comprehensive approach encompassing the UX design double diamond process, UI design, and full-stack development, I was able to navigate the project from conceptualization to implementation, ensuring its relevance and usability for potential users. 
+
+
 ## Table of Content 
 - [Features and user Flow](#features)
 - [Installation](#installation)
@@ -26,7 +31,10 @@ SALUT was created to solve this problem by providing a platform for nomads to co
 ![UserFlow](https://user-images.githubusercontent.com/122279872/230796935-ac5e6a2a-0855-4017-95b8-6b95458ba511.png)
 
 
-    
+## Final Solution Screens 
+
+<img width="2173" alt="Screens" src="https://github.com/moomance/armance-capstone/assets/122279872/92653a2b-de5d-470a-ba51-e351b1203f94">
+
 
 ## Installation
 
